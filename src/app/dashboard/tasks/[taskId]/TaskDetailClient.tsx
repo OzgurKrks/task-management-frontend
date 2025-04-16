@@ -33,6 +33,7 @@ export default function TaskDetailClient({
   const [task, setTask] = useState<Task>(taskDetails);
   const [isUpdating, setIsUpdating] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isDeletingInProgress, setIsDeletingInProgress] = useState(false);
   const [isLoadingUsers, setIsLoadingUsers] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isEditing, setIsEditing] = useState(false);
@@ -108,7 +109,7 @@ export default function TaskDetailClient({
 
   const handleDeleteTask = async () => {
     try {
-      setIsDeleting(true);
+      setIsDeletingInProgress(true);
       setError(null);
 
       await axiosPrivate.delete(`/tasks/${task._id}`);
@@ -122,7 +123,7 @@ export default function TaskDetailClient({
       console.error("Failed to delete task:", err);
       setError("Could not delete task. Please try again.");
       showErrorToast("Failed to delete task. Please try again.");
-      setIsDeleting(false);
+      setIsDeletingInProgress(false);
     }
   };
 
@@ -408,7 +409,7 @@ export default function TaskDetailClient({
                       Confirm Deletion
                     </h3>
 
-                    {isDeleting && !error ? (
+                    {isDeletingInProgress ? (
                       <div className="flex flex-col items-center justify-center py-4">
                         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-red-600"></div>
                         <p className="mt-3 text-red-700">Deleting task...</p>
