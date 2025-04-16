@@ -4,6 +4,8 @@ Bu proje, kullanıcıların projeler oluşturup bu projeler altında görevler a
 
 ## 🚀 Demo
 
+## ⚠️ Backendin deploy edildiği render.com ücretsiz sürümü etkin olmama sürelerinden sonra yavaşlar. Lütfen ilk isteklerin cevaplanması için biraz bekleyin.
+
 Uygulamanın canlı demo versiyonuna aşağıdaki bağlantıdan erişebilirsiniz:
 **[https://task-management-frontend-three-ashen.vercel.app/](https://task-management-frontend-three-ashen.vercel.app/)**
 
