@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 15, 23, 42;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md text-white font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90;
+  }
+
+  .btn-danger {
+    @apply bg-danger hover:bg-danger/90;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90;
+  }
+
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md p-4;
+  }
+}
