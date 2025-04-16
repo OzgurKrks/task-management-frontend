@@ -3,6 +3,7 @@ import {
   PlusIcon,
   UserGroupIcon,
   TrashIcon,
+  EyeIcon,
 } from "@heroicons/react/24/outline";
 import { Project } from "@/types/project";
 import { Task } from "@/types/task";
@@ -42,6 +43,10 @@ export default function ProjectColumn({
 
   const handleViewMembers = () => {
     setIsMembersModalOpen(true);
+  };
+
+  const handleViewDetails = () => {
+    router.push(`/dashboard/projects/${project._id}`);
   };
 
   const handleEditTask = (taskId: string) => {
@@ -113,6 +118,14 @@ export default function ProjectColumn({
           >
             <PlusIcon className="h-5 w-5" />
           </button>
+
+          <button
+            onClick={handleViewDetails}
+            className="p-1 text-gray-500 hover:text-green-500"
+            title="View project details"
+          >
+            <EyeIcon className="h-5 w-5" />
+          </button>
         </div>
       </div>
 
@@ -143,6 +156,16 @@ export default function ProjectColumn({
             No tasks yet
           </div>
         )}
+      </div>
+
+      {/* View details link at the bottom */}
+      <div className="mt-3 text-center">
+        <button
+          onClick={handleViewDetails}
+          className="text-blue-500 hover:text-blue-700 text-sm font-medium"
+        >
+          View Details
+        </button>
       </div>
 
       {/* Project Members Modal */}
