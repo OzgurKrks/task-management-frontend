@@ -15,7 +15,7 @@ class SocketService {
   private readonly url: string;
 
   constructor() {
-    this.url = process.env.NEXT_PUBLIC_SOCKET_URL || 'http://localhost:5000/api';
+    this.url = process.env.NEXT_PUBLIC_SOCKET_URL || 'https://task-management-backend-ts41.onrender.com/api';
   }
 
   // Connect to socket server

@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getAuthToken } from '@/utils/authCookies';
 
 // API base URL
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://task-management-backend-ts41.onrender.com//api';
 
 // Create a base axios instance for public requests
 export const axiosInstance = axios.create({

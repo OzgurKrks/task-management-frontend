@@ -67,7 +67,7 @@ interface RegisterCredentials {
 }
 
 // Define API base URL
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://task-management-backend-ts41.onrender.com/api';
 
 // Create axios instance specifically for auth
 const authAxios = axios.create({
