@@ -1,6 +1,6 @@
 # Görev Yönetim Sistemi
 
-Bu proje, kullanıcıların projeler oluşturup bu projeler altında görevler atayabileceği, takip edebileceği ve yönetebileceği, modern bir görev yönetim sisteminin backend API'sini içermektedir.
+Bu proje, kullanıcıların projeler oluşturup bu projeler altında görevler atayabileceği, takip edebileceği ve yönetebileceği, modern bir görev yönetim sisteminin frontend mimarisini içermektedir.
 
 ## 🚀 Demo
 
