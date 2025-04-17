@@ -2,9 +2,8 @@
 
 Bu proje, kullanıcıların projeler oluşturup bu projeler altında görevler atayabileceği, takip edebileceği ve yönetebileceği, modern bir görev yönetim sisteminin frontend mimarisini içermektedir.
 
-## ⚠️ Backendin deploy edildiği render.com ücretsiz sürümü etkin olmama sürelerinden sonra yavaşlar. Lütfen ilk isteklerin cevaplanması için biraz bekleyin.
-
 ## 🚀 Demo
+
 Uygulamanın canlı demo versiyonuna aşağıdaki bağlantıdan erişebilirsiniz:
 **[https://task-management-frontend-three-ashen.vercel.app/](https://task-management-frontend-three-ashen.vercel.app/)**
 
