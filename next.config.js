@@ -2,12 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["https://task-management-backend-ts41.onrender.com"],
+    domains: ["https://api.isletmempro.com"],
   },
   env: {
     NEXT_PUBLIC_API_URL:
-      process.env.NEXT_PUBLIC_API_URL ||
-      "https://task-management-backend-ts41.onrender.com/api",
+      process.env.NEXT_PUBLIC_API_URL || "https://api.isletmempro.com/api",
   },
 };
 
